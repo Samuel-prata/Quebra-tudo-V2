@@ -1,0 +1,97 @@
+CLASSE PRODUTO
+package br.com.vainaweb.backendt1.classeexercicio2;
+
+public class Produto {
+	char numProduto;
+	String descricao;
+	int quantidade;
+	double preco;
+	public Produto(char numProduto, String descricao, int quantidade, double preco) {
+		
+	
+		this.numProduto = numProduto;
+		this.descricao = descricao;
+		this.quantidade = quantidade;
+		this.preco = preco;
+	}
+}
+
+
+
+
+
+CLASSE CLIENT
+package br.com.vainaweb.backendt1.classeexercicio2;
+
+import java.util.ArrayList;
+import java.util.List;
+import br.com.vainaweb.backendt1.classes.Pessoas;
+
+public class Client {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		 Fatura client1 = new Fatura();
+		 client.docFatura();
+		
+	
+	}
+}
+
+
+
+
+
+CLASSE FATURA
+
+package br.com.vainaweb.backendt1.classeexercicio2;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Fatura {
+	String numProduto;
+	String descricao;
+	int quantidade;
+	double preco;
+	
+
+	public void docFatura() {
+		Scanner input = new Scanner(System.in);
+
+		List<Produto> lista = new ArrayList<Client>();
+		System.out.println("Quantos produtos o cliente comprou?");
+		int produtos = input.nextInt();
+		input.nextLine();
+		for(int i = 0; i < produtos; i--) {
+			System.out.println("Digite o número do produto: ");
+			numProduto = input.nextLine();
+			
+			
+			System.out.println("Digite a descrição: ");
+			descricao = input.nextLine();
+			
+			System.out.println("Digite a quantidade: ");
+			quantidade = input.nextInt();
+			scan.nextLine();
+			
+			System.out.println("Digite o preço: ");
+			preco = input.nextInt();
+			lista.add(new Produto(numProduto, descricao, quantidade, preco));
+	
+			
+		}
+		for(Int produto: lista) {
+			System.out.println("Numero do produto");
+			System.out.println(produto.numProduto);
+			System.out.println("Descriçao: ");
+			System.out.println(produto.descricao);
+			System.out.println("Quantidade: ");
+			System.out.println(produto.quantidade);
+			System.out.println("Preço: ");
+			System.out.println(produto.preco);
+		}
+	}
+}
+
+

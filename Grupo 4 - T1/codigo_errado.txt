@@ -1,0 +1,180 @@
+CLASSE MAIN
+
+package br.com.vainaweb.backendt1.clinicavet;
+
+public class clinica {
+
+	public static void main(String[ args) {
+		Scanner sc = new Scanner(System.in);
+		Usuario user = new Usuario();
+		List<Usuario> usuarios = new ArrayList<Usuario>();
+		Animal animal = new Animal(1);
+		List<Animal> listaAnimal = new ArrayList<Animal>();
+		boolean loginOk = true;
+
+				String menu = """
+						\nCLINA VETERINÁRIA SUNSHINE\n
+						-----------------------------
+						1 - Login
+						2 - Cadastro de Login
+						3 - Sair
+						""";
+
+				String menu2 = """
+						
+						-----------------------------
+						1 - Cadastrar novo Paciente.
+						2 - Consultar Pacientes.
+						3 - Sair da sua conta.
+						""";
+
+				int opcao = 3;
+				int opcao2 = 0;
+
+				do {
+
+					System.out.println(menu);
+					System.out.println("O que deseja fazer:");
+					opcao = sc.nextInt();
+					sc.nextLine();
+
+					switch (opco) {
+					case 1:
+						System.out.println("Digite seu e-mail:");
+						String emailConfirmar = scnextLine();
+						System.out.println("Digite sua senha:");
+						String senhaConfirmar = sc.nextLine();
+						
+						for (Usuario u : usuarios) {
+							if (u.email.equals(emailConfirmar) && u.senha.equals(senhaConfirmar)) {
+								loginOk = true;
+								
+							}
+						
+						
+						if(loginOk = true) {
+							System.out.println("Login efetuado com sucesso!");
+							System.out.println("\n----------------------------\n");
+						} else {
+							System.out.println("E-mail ou senha incorretos. Tente novamente.");
+						}
+						}
+
+						if (loginOk == true) {
+
+							do {
+								System.out.println(menu2);
+								System.out.println("Digite a opção escolhida:");
+								opcao2 = sc.nextInt();
+
+								switch (opcao2) {
+								case 1:
+									System.out.println("CADASTRO DE NOVO PACIENTE!!");
+
+									System.out.println("Nome do paciente: ")
+									animal.nomeAnimal = sc.next();
+									sc.nextLine();
+									System.out.println("Nome do tutor: ");
+									animal.nomeTutor = sc.next();
+									sc.nextLine();
+									System.out.print("Tipo do animal: \n")
+									animal.tipoAnimal = sc.next();
+									sc.nextLine();
+									System.out.print("Idade do animal: \n");
+									animal.idade = sc.nextInt();
+									sc.nextLine();
+									System.out.println("\n-------------------------------");
+									System.out.println("CADASTRO REALIZADO COM SUCESSO");
+									System.out.println("-------------------------------");
+
+									listaAnimal.add(new Animal(animal.nomeAnimal, animal.nomeTutor, animal.tipoAnimal, animal.idade));
+									
+									break;
+
+								case 2:
+									System.out.println("\n-------------------------------");
+									System.out.println("LISTA DE PACIENTES");
+									System.out.println("-------------------------------");
+									for (Animal a : listaAnimal) {
+										System.out.println("Nome:" + a.nomeAnimal + "Nome do tutor:" + a.nomeTutor
+										+ "Idade:" + a.idade + "Tipo de animal:" + a.tipoAnimal);
+									break;
+									
+								case 2:
+									System.out.println("------------------------------------");
+									System.out.println("USUÁRIO DESLOGADO COM SUCESSO");
+									System.out.println("------------------------------------");
+									
+
+								default:
+									System.out.println("Opção Inexistente, tente novamente.");
+									break;
+
+								};
+
+							} while (opcao2 != 7);
+				} else {
+					opcao = 3;
+				}
+				break;
+
+					case 2:
+						System.out.println("Digite um e-mail para cadastrar:");
+						user.email = sc.nextLine();
+						System.out.println("Digite uma senha para cadastrar:");
+						user.senha = sc.nextLine();
+
+						usuarios.add(new Usuario(user.email, user.senha));
+						System.out.println("\nUsuário cadastrado com sucesso!");
+						System.out.println("------------------------------------");
+
+						break;
+					case 3:
+						System.out.println("------------------------------------");
+						System.out.println("APLICAÇÃO ENCERRADA - ATÉ A PRÓXIMA!");
+						System.out.println("------------------------------------");
+						break;
+					default:
+						System.out.println("Opção Inexistente. Tente outra opção.");
+						break;
+					}
+
+				} while (opcao != 3);
+				sc.close();
+			}
+	}
+
+CLASSE USUARIO
+
+
+
+public class Usuario {
+	String email;
+	String senha;
+
+	public Usuario() {
+
+	}
+
+
+}
+
+
+CLASSE ANIMAL
+
+package br.com.vainaweb.backendt1.clinicavet;
+ 
+public class Animal {
+	String nomeAnimal;
+	String nomeTutor;
+	String tipoAnimal;
+	double idade;
+	
+	
+	public Animal(String nomeAnimal, String nomeTutor, String tipoAnimal) {
+		this.nomeAnimal = nomeAnimal;
+		this.nomeTutor = nomeTutor;
+		this.tipoAnimal = tipoAnimal;
+	}
+	
+}}
