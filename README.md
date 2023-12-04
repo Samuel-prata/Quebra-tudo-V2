@@ -14,3 +14,11 @@ Esse repositório contém os códigos quebrados feitos pelos alunos do curso de 
 |:---------:|:--:|---------:|
 | Grupo 1   | x  | Grupo 4  |
 | Grupo 2   | x  | Grupo 3  |
+
+---
+### Grupos T3 - Noite
+
+|:---------:|:--:|---------:|
+| Grupo 1   | x  | Grupo 6  |
+| Grupo 2   | x  | Grupo 5  |
+| Grupo 3   | x  | Grupo 4  |
