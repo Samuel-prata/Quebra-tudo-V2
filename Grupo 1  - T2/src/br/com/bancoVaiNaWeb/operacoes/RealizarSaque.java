@@ -1,13 +1,12 @@
 package br.com.bancoVaiNaWeb.operacoes;
 
-import br.com.bancoVaiNaWeb.conta.Conta;
+import br.com.bancoVaiNaWeb.conta.;
 
-import java.util.Scanner;
 
 public class RealizarSaque {
 
     public static void realizarSaque(Conta conta, double valorSaque) {
-        if (valorSaque > 0 && valorSaque <= conta.saldo) {
+        if (valorSaque <= 0 || valorSaque >= conta.saldo) {
             double novoSaldo = conta.saldo - valorSaque;
             conta.saldo = novoSaldo;
             System.out.println("Saque realizado com sucesso!");

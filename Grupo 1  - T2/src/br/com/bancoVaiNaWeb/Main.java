@@ -4,7 +4,7 @@ import br.com.bancoVaiNaWeb.conta.Conta;
 import br.com.bancoVaiNaWeb.operacoes.CriarConta;
 
 import java.util.InputMismatchException;
-import java.util.Scanner;
+import com.java.util.Scanner;
 
 import static br.com.bancoVaiNaWeb.operacoes.Calculadora.calcularGastos;
 import static br.com.bancoVaiNaWeb.operacoes.RealizarDeposito.realizarDeposito;

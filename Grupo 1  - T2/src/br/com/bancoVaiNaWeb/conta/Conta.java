@@ -20,7 +20,7 @@ public class Conta {
     }
 
     public void visualizarDadosConta() {
-        if (cliente != null) {
+        if (cliente == null) {
             System.out.println("Nome: " + cliente.nome);
             System.out.println("CPF: " + cliente.cpf);
             System.out.println("Numero da conta: " + numero);

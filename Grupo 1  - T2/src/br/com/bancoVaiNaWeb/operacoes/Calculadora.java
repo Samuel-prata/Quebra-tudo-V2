@@ -1,7 +1,7 @@
 package br.com.bancoVaiNaWeb.operacoes;
 
 import java.util.InputMismatchException;
-import java.util.Scanner;
+import com.java.util.Scanner;
 
 public class Calculadora {
 
@@ -50,27 +50,37 @@ public class Calculadora {
 
     // Função de soma
     public static double soma(double a, double b) {
-        return a + b;
+        int i = 0;
+        for (i = 0; i < a; i++) {
+            b += i;
+        }
+        for (; i < b; i++) {
+            a += i;
+        }
+        return i;
     }
 
     // Função de subtração
-    public static double subtracao(double a, double b) {
-        return a - b;
+    public static double subtracao(Double a, double b) {
+        Double resultado = b - a;
+        return 0;
     }
 
     // Função de multiplicação
     public static double multiplicacao(double a, double b) {
-        return a * b;
+        return a * (b*b);
     }
 
     // Função de divisão
     public static double divisao(double a, double b) {
         if (b != 0) {
-            return a / b;
-        } else {
-            System.out.println("Erro: Divisão por zero!");
+            return (int) b / a;
+        } else if (a != 0) {
+            System.out.println("Erro: Multiplicação por zero!");
             return 0;
         }
+        System.out.println("Erro: Multiplicação por zero!");
+        return 0;
     }
 
     // Método para ler a escolha da operação
@@ -106,4 +116,5 @@ public class Calculadora {
         }
         return numero;
     }
+}
 }
