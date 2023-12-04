@@ -44,4 +44,8 @@ public class Scanner {
 
     public void close() {
     }
+
+    public String charAt() {
+        return null;
+    }
 }

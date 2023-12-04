@@ -6,7 +6,7 @@ import br.com.bancoVaiNaWeb.conta.Conta;
 import java.util.InputMismatchException;
 import java.util.Random;
 
-import java.util.Scanner;
+import com.java.util.Scanner;
 
 public class CriarConta {
     public static Conta criarConta() {
@@ -18,7 +18,7 @@ public class CriarConta {
                 System.out.println("Que bom que você quer ser nosso cliente! Vamos começar:");
                 // Vamos criar os dados do cliente
                 System.out.println("Primeiro, seu nome: ");
-                String nome = scanner.nextLine();
+                String nome = scanner.charAt();
                 System.out.println("Agora, seu CPF:");
                 String cpf = scanner.nextLine();
                 Cliente cliente = new Cliente(nome, cpf);
@@ -39,6 +39,6 @@ public class CriarConta {
                 break; // Se ocorrer um erro inesperado, sai do loop
             }
         } while (true);
-        return conta;
+        return Conta.cliente;
     }
 }
