@@ -17,7 +17,7 @@ Esse repositório contém os códigos quebrados feitos pelos alunos do curso de 
 
 ---
 ### Grupos T3 - Noite
-
+|           |    |          |
 |:---------:|:--:|---------:|
 | Grupo 1   | x  | Grupo 6  |
 | Grupo 2   | x  | Grupo 5  |
