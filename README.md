@@ -26,7 +26,7 @@ Esse repositório contém os códigos quebrados feitos pelos alunos do curso de 
 
 Grupo 1 -> Adriano, Carlos, Esdras, Emanuelle, Klayvem, Lucas Lobão, Thiago Augusto.  
 
-Grupo 2 -> Anilton, Diego, Kaio, Gustavo de Brito e Juliana.
+Grupo 2 -> Anilton, Diego, Gustavo de Brito, Kaio, Juliana e Rafael.
 
 Grupo 3 -> Luccas, Luis, Alita, Yasmin, Laun, Leticia e José Francisco.
 
